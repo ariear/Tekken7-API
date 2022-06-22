@@ -6,7 +6,7 @@ import character from './src/router/character.js';
 import main from './src/router/index.js';
 
 const app = express()
-app.use('/asset',express.static('public'))
+app.use(express.static('public'))
 app.use(cors())
 
 app.use(main)
