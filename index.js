@@ -1,13 +1,13 @@
 import express from 'express'
 import mongoose from 'mongoose';
 import 'dotenv/config'
-import helmet from 'helmet';
+import cors from 'cors'
 import character from './src/router/character.js';
 import main from './src/router/index.js';
 
 const app = express()
-app.use(helmet())
 app.use('/asset',express.static('asset'))
+app.use(cors())
 
 app.use(main)
 app.use(character)
