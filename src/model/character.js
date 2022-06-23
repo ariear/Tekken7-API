@@ -8,7 +8,8 @@ const CharacterSchema = new mongoose.Schema({
     avatar: String,
     image: String,
     age: String,
-    region: String
+    region: String,
+    description: String
 })
 
 const Character = mongoose.model('Character', CharacterSchema)
