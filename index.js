@@ -10,7 +10,7 @@ app.use(express.static('public'))
 app.use(cors())
 
 app.use(main)
-app.use(character)
+app.use('/api/v1/',character)
 
 mongoose.connect(process.env.APP_DB).then(() => {
     app.listen(3000, () => {
