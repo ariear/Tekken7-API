@@ -4,12 +4,9 @@ import 'dotenv/config'
 import cors from 'cors'
 import character from './src/router/character.js';
 import main from './src/router/index.js';
-import path, {dirname} from 'path'
-import { fileURLToPath } from 'url';
 
 const app = express()
-const __dirname = dirname(fileURLToPath(import.meta.url))
-app.use('/public',express.static(path.join(__dirname,'public')))
+app.use(express.static('public'))
 app.use(cors())
 
 app.use(main)
