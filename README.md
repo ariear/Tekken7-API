@@ -13,7 +13,7 @@ tekken 7 api build with express js and mongoDB 🌸
 
 ### Endpoint Usage
 ---
-**Base Url** : `https://tekken7.vercel.app`
+**Base Url** : `https://tekken7.cyclic.app`
 
 | Endpoint | Usage | Example |
 |----------|-------|---------|
